@@ -6,6 +6,11 @@
   }
 ```
 
+### package
+```
+npm i commander@9 inquirer@8
+```
+
 ### 내 파일(index.js) 등록(설치) 
 ```
 npm i -g
