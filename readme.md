@@ -8,6 +8,13 @@
 
 ### package
 ```
+npm i chalk@4
+```
+
+커맨드 라인에 색깔... 설정
+
+### package
+```
 npm i commander@9 inquirer@8
 ```
 

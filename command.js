@@ -1,5 +1,6 @@
 const { program } = require('commander');
 const inquirer = require('inquirer');
+const chalk = require('chalk');
 
 const fs = require('fs');
 const path = require('path');
@@ -60,10 +61,10 @@ const makeTemplate = (type, name, directory) => {
     if (type === 'html') {
         const pathToFile = path.join(directory, `${name}.html`);
         if (exist(pathToFile)) {
-            console.error('이미 해당 파일이 존재합니다.');
+            console.error(chalk.bold.red('이미 해당 파일이 존재합니다.'));
         } else {
             fs.writeFileSync(pathToFile, htmlTemplate);
-            console.log(pathToFile, '생성 완료');
+            console.log(pathToFile, chalk.bold.green('생성 완료'));
         }
     } else if (type === 'express-router') {
         const pathToFile = path.join(directory, `${name}.js`);

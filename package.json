@@ -13,6 +13,7 @@
     "cli": "./command.js"
   },
   "dependencies": {
+    "chalk": "^4.1.2",
     "commander": "^9.4.1",
     "inquirer": "^8.2.5"
   }
