@@ -5,6 +5,7 @@
     "cli": "./index.js"
   }
 ```
+
 ### 내 파일(index.js) 등록(설치) 
 ```
 npm i -g
@@ -12,4 +13,16 @@ npm i -g
 
 ```
 npx cli
+```
+
+```
+npm rm -g node-cli
+```
+
+## 정상적으로 적용되지 않는 경우
+```
+npm ls -g node-cli
+```
+```
+rimraf cli cli.cmd cli.ps1
 ```
